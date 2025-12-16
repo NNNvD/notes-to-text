@@ -1,0 +1,21 @@
+[project]
+name = "handwriting-transcribe-pipeline"
+version = "0.1.0"
+description = "Batch handwriting transcription pipeline with preprocessing, OpenAI vision transcription, and review flags."
+authors = [{ name = "Notes to Text" }]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "openai>=1.25.0",
+  "opencv-python>=4.8.0",
+  "pydantic>=2.6.0",
+  "tqdm>=4.66.0",
+  "pillow>=10.0.0"
+]
+
+[project.scripts]
+run-hw-batch = "hwpipe.batch:main"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
