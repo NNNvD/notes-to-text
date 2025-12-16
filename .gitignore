@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+.data/
+.DS_Store
+build/
+dist/
+.eggs/
+*.egg-info/
+
+# Pipeline data
+data/in/*
+data/normalized/*
+# Keep outputs/manifest optional
+
